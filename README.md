@@ -2,9 +2,9 @@
 
 This application allows users to generate SQL queries using natural language input. It connects to a database (or uses a mock database) and provides an interface for users to ask questions in plain English, which are then converted into SQL queries and executed against the database.
 
-![Screenshot](https://github.com/theGateway1/QueryWise-Frontend/blob/master/public/easysql-landing.png)
+![querywise](https://github.com/user-attachments/assets/945c9d28-6a83-4256-92c3-decd5b55cdf3)
 
-![Screenshot](https://github.com/theGateway1/QueryWise-Frontend/blob/master/public/easysql-chat.png)
+![querywise](https://github.com/user-attachments/assets/1eca8e22-65c2-41dc-be14-d9ae26d3e7ee)
 
 ## Features
 
