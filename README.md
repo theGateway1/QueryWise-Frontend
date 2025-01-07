@@ -1,34 +1,22 @@
 # Natural Language to SQL Query Generator
 
-This application allows users to generate SQL queries using natural language input. It connects to a database (or uses a mock database) and provides an interface for users to ask questions in plain English, which are then converted into SQL queries and executed against the database.
+This application allows users to generate SQL queries using natural language input. It connects to a database and provides an interface for users to ask questions in English, which are then converted into SQL queries and executed against the database.
 
 ![querywise](https://github.com/user-attachments/assets/945c9d28-6a83-4256-92c3-decd5b55cdf3)
 
 ![querywise](https://github.com/user-attachments/assets/1eca8e22-65c2-41dc-be14-d9ae26d3e7ee)
 
-## Features
-
-- Natural language to SQL query conversion
-- Database connection management
-- Mock database option for testing
-- Real-time query results display
 
 ## Architecture
 
 - Frontend:
-
   - Next.js for server-side rendering and API routes
   - Tailwind CSS for styling
   - Shadcn/UI for components
 
 - Backend:
   - FastAPI for handling database connections and text-to-SQL conversion
-  - Python for backend logic
   - OpenAI for text-to-SQL conversion
-- API Routes:
-  - `db-structure/route.ts`: Next.js API route for fetching database structure
-  - `proxy/route.ts`: Next.js API route for communicating with FastAPI backend
-  - FastAPI backend: Handles database connections and text-to-SQL conversion
 
 ## Installation
 
@@ -89,14 +77,6 @@ This application allows users to generate SQL queries using natural language inp
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4. Choose to use a mock database or connect to your own database.
+4. Enter your database credentials and click "Connect" to establish a database connection.
 
-5. If using your own database, enter the connection details.
-
-6. Click "Connect" to establish a database connection.
-
-7. Enter a natural language query in the text area.
-
-8. Click "Generate SQL" to convert your query to SQL and execute it.
-
-9. View the results displayed below the query input.
+5. Enter a natural language query in the text area. Click "Generate SQL" to convert your query to SQL and execute it.
